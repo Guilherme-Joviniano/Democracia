@@ -132,7 +132,6 @@ table {
 	color: transparent;
 }
 header,.documentario{
-	background-image: url(/assets/wave-haikei\ \(1\).svg);
 	width: 100%;	
 	height: 100px;
 	display: flex;
@@ -265,27 +264,55 @@ header h1,.documentario h1{
 	height: 550px;
 	background-color: #000;
 }
-.btn{
-	margin-bottom: 100px;
-	border:none;
-	cursor: pointer;
-	width: 200px;
-	height: 50px;
-	background-color: white;
-	font-style: none;
-	font-variant: normal;
-	letter-spacing: 8px;
-	font-size: 20px;
-	color: #000;
-	box-shadow: inset 0 0 0 0 #0000;
-	transition: .4s;
-}
-.btn:hover{
-	box-shadow: inset 200px 0 0 0 rgb(0, 0, 0);
-	color: #fff;
-}
 .fas{
 	position: relative;
 	cursor: pointer;
 	top: 20px;
+}
+.circle {
+	stroke: darkred;
+	stroke-dasharray: 650;
+	stroke-dashoffset: 650;
+	-webkit-transition: all 0.5s ease-in-out;
+	opacity: 0.3;
+}
+.playBut {
+   /* border: 1px solid red;
+   */
+	display: inline-block;
+	-webkit-transition: all 0.5s ease;
+}
+.playBut .triangle {
+	-webkit-transition: all 0.7s ease-in-out;
+	stroke-dasharray: 240;
+	stroke-dashoffset: 480;
+	stroke: #fff;
+	transform: translateY(0);
+}
+.playBut:hover .triangle {
+	stroke-dashoffset: 0;
+	opacity: 1;
+	stroke: darkred;
+	animation: nudge 0.7s ease-in-out;
+}
+@keyframes nudge {
+	0% {
+		transform: translateX(0);
+   }
+	30% {
+		transform: translateX(-5px);
+   }
+	50% {
+		transform: translateX(5px);
+   }
+	70% {
+		transform: translateX(-2px);
+   }
+	100% {
+		transform: translateX(0);
+   }
+}
+.playBut:hover .circle {
+	stroke-dashoffset: 0;
+	opacity: 1;
 }

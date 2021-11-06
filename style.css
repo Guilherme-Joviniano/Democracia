@@ -134,23 +134,7 @@ li:hover::after {
 	height: 90%;
 	grid-template-columns: repeat(3, 1fr);
 }
-.container-video{
-	position: relative;
-	top: 5%;
-	border-radius: 4%;
-	margin: 0 auto;
-	width: 90%;
-	height: 90%;
-	background-color: red;
-}
-.container-video h1{
-	font-family: 'Times New Roman', Times, serif;
-	color: #fff;
-	font-size: 4rem;
-	position: relative;
-	top: 35%;
-	text-align: center;
-}
+
 .card:nth-child(1){
 	background-image:linear-gradient(to left, transparent 30%, rgba(0, 0, 0, 0.493) 90%), url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Pedro_Am%C3%A9rico_-_Independ%C3%AAncia_ou_Morte_-_Google_Art_Project.jpg/1920px-Pedro_Am%C3%A9rico_-_Independ%C3%AAncia_ou_Morte_-_Google_Art_Project.jpg); 
 }

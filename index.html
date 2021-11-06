@@ -89,7 +89,11 @@
   </div>
 </div>
 <div class="section" id="forum">
-  
+      <div class="container-forum">
+          <h1>Acesse Nosso Forum!</h1>
+          <p>Como toda Democracia precisamos de ideias diferentes que agreguem ao todo!</p>
+          <div class="button-forum"><a href="" target="_blank">ACESSE</a></div>
+      </div>
   </div>
 </div>
 <script>
@@ -111,8 +115,6 @@ function aumentar(id){
     item = document.getElementById(id);
     btn.innerHTML ='Recolher';
     if(item.style.height == '600px'){
-    item.style.width=  widthOriginal;
-    item.style.height = heightOriginal;
     text.style.display = 'none'
     document.location.reload(true);
     }else{

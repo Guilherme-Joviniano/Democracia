@@ -89,7 +89,7 @@ li:hover::after {
 	width: 100%;
 }
 
-.section:nth-child(1) {
+#intro{
 	width: 100%;
 	height: 100vh;
 	background-image: linear-gradient(to left, transparent 30%, rgba(0, 0, 0, 0.493) 50%), url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Catedral1_Rodrigo_Marfan.jpg/1280px-Catedral1_Rodrigo_Marfan.jpg);
@@ -97,12 +97,12 @@ li:hover::after {
 	background-size: cover;
 }
 
-.section:nth-child(2) {
+#card{
 	background-color: rgb(243, 243, 234);
 	height: 170vh;
 }
 
-.section:nth-child(3) {
+#forum{
 	background-color: rgb(243, 243, 234);
 	height: 70vh;
 	padding-top: 100px;

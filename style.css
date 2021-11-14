@@ -2,12 +2,8 @@
 	padding: 0;
 	margin: 0;
 }
-
 html {
 	scroll-behavior: smooth;
-}
-
-html {
 	background-color: rgb(243, 243, 234);
 }
 
@@ -172,16 +168,15 @@ li:hover::after {
 	font-size: 3rem;
 }
 
-.container, .container-forum {
+.container, .container-forum{
 	display: grid;
+	grid-template-columns: repeat(3,1fr);
 	position: relative;
 	top: 2%;
 	margin: 0 auto;
 	width: 95%;
-	height: 95%;
-	grid-template-columns: repeat(3, 1fr);
+	height: 95%;	
 }
-
 .container-forum {
 	width: 95%;
 	-webkit-border-radius: 22px;
@@ -335,3 +330,37 @@ button:hover {
 }
 
 /*MEDIA QUERIE --- EM PRODUÇÃO :)*/
+
+
+@media (max-width: 700px) {
+	body{
+		overflow-x: hidden;
+	}
+	#card{
+		height: auto;
+	}
+	.title{
+		padding-top: 40px;
+		
+	}
+	li{
+		font-size: 20px;
+	}
+	.main-title {
+		top: 50px;
+		left: 50px;
+		font-size: 2rem;
+		max-width: 350px;
+		padding: 0;
+		overflow-x: hidden;
+	}
+	.container{
+		display: block; 
+	}
+	.container-forum h1{
+		font-size: 2.1rem;
+	}
+	.container-forum p{
+		font-size: 1.5rem;
+  }
+}

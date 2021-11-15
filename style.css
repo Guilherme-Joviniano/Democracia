@@ -7,6 +7,25 @@ html {
 	background-color: rgb(243, 243, 234);
 }
 
+#intro {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(to left, transparent 30%, rgba(0, 0, 0, 0.493) 50%), url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Catedral1_Rodrigo_Marfan.jpg/1280px-Catedral1_Rodrigo_Marfan.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#card {
+	background-color: rgb(243, 243, 234);
+	height: 170vh;
+}
+
+#forum {
+	background-color: rgb(243, 243, 234);
+	height: 70vh;
+	padding-top: 100px;
+}
+
 /* width */
 
 ::-webkit-scrollbar {
@@ -84,25 +103,6 @@ li::after {
 
 li:hover::after {
 	width: 100%;
-}
-
-#intro {
-	width: 100%;
-	height: 100vh;
-	background-image: linear-gradient(to left, transparent 30%, rgba(0, 0, 0, 0.493) 50%), url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Catedral1_Rodrigo_Marfan.jpg/1280px-Catedral1_Rodrigo_Marfan.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-#card {
-	background-color: rgb(243, 243, 234);
-	height: 170vh;
-}
-
-#forum {
-	background-color: rgb(243, 243, 234);
-	height: 70vh;
-	padding-top: 100px;
 }
 
 .main-title, .container-forum h1 {

@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 }
+
 html {
 	scroll-behavior: smooth;
 	background-color: rgb(243, 243, 234);
@@ -168,15 +169,16 @@ li:hover::after {
 	font-size: 3rem;
 }
 
-.container, .container-forum{
+.container, .container-forum {
 	display: grid;
-	grid-template-columns: repeat(3,1fr);
+	grid-template-columns: repeat(3, 1fr);
 	position: relative;
 	top: 2%;
 	margin: 0 auto;
 	width: 95%;
-	height: 95%;	
+	height: 95%;
 }
+
 .container-forum {
 	width: 95%;
 	-webkit-border-radius: 22px;
@@ -195,18 +197,18 @@ li:hover::after {
 }
 
 .card:nth-child(1) {
-	background-size: cover;
+	background: center contain;
 	background-image: linear-gradient(to left, transparent 30%, rgba(0, 0, 0, 0.493) 90%), url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Pedro_Am%C3%A9rico_-_Independ%C3%AAncia_ou_Morte_-_Google_Art_Project.jpg/1920px-Pedro_Am%C3%A9rico_-_Independ%C3%AAncia_ou_Morte_-_Google_Art_Project.jpg);
 }
 
 .card:nth-child(2) {
 	background-position: center;
-	background-size: cover;
+	background-size: 120%;
 	background-image: linear-gradient(to left, transparent 30%, rgba(0, 0, 0, 0.493) 90%), url(https://www.infoescola.com/wp-content/uploads/2009/07/proclamacao-da-republica.jpg);
 }
 
 .card:nth-child(3) {
-	background-size: cover;
+	background-size: 150%;
 	background-position: center;
 	background-image: linear-gradient(to left, transparent 30%, rgba(0, 0, 0, 0.493) 100%), url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Constitui%C3%A7%C3%A3o_da_Rep%C3%BAblica_dos_Estados_Unidos_do_Brasil_de_1891_p._00_%28capa%29.jpg/800px-Constitui%C3%A7%C3%A3o_da_Rep%C3%BAblica_dos_Estados_Unidos_do_Brasil_de_1891_p._00_%28capa%29.jpg);
 }
@@ -333,19 +335,17 @@ button:hover {
 
 /*MEDIA QUERIE*/
 
-
 @media (max-width: 700px) {
-	body{
+	body {
 		overflow-x: hidden;
 	}
-	#card{
+	#card {
 		height: auto;
 	}
-	.title{
+	.title {
 		padding-top: 40px;
-		
 	}
-	li{
+	li {
 		font-size: 20px;
 	}
 	.main-title {
@@ -356,13 +356,27 @@ button:hover {
 		padding: 0;
 		overflow-x: hidden;
 	}
-	.container{
-		display: block; 
+	.container {
+		display: block;
 	}
-	.container-forum h1{
+	.container-forum h1 {
 		font-size: 2.1rem;
 	}
-	.container-forum p{
+	.container-forum p {
 		font-size: 1.5rem;
-  }
+	}
+	.card:nth-child(1) {
+		background: cover bottom;
+		background-image: linear-gradient(to left, transparent 30%, rgba(0, 0, 0, 0.493) 90%), url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Pedro_Am%C3%A9rico_-_Independ%C3%AAncia_ou_Morte_-_Google_Art_Project.jpg/1920px-Pedro_Am%C3%A9rico_-_Independ%C3%AAncia_ou_Morte_-_Google_Art_Project.jpg);
+	}
+	.card:nth-child(2) {
+		background-position: center;
+		background-size: cover;
+		background-image: linear-gradient(to left, transparent 30%, rgba(0, 0, 0, 0.493) 90%), url(https://www.infoescola.com/wp-content/uploads/2009/07/proclamacao-da-republica.jpg);
+	}
+	.card:nth-child(9) {
+		background-size: cover;
+		background-position: right;
+		background-image: linear-gradient(to left, transparent 30%, rgb(0, 0, 0) 90%), url(https://diariodocomercio.com.br/wp-content/uploads/2021/04/bolsonaro-orcamento-2021-2304.jpg);
+	}
 }

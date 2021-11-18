@@ -120,12 +120,15 @@ li:hover::after {
 .container-forum h1 {
 	max-width: 100%;
 	top: 30px;
+	user-select: none;
 	left: 0;
 	text-align: center;
 }
 
 .container-forum p {
 	color: #fff;
+	user-select: none;
+
 	text-align: center;
 	font-size: 2rem;
 	max-width: 700px;

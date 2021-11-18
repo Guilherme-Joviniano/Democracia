@@ -379,4 +379,9 @@ button:hover {
 		background-position: right;
 		background-image: linear-gradient(to left, transparent 30%, rgb(0, 0, 0) 90%), url(https://diariodocomercio.com.br/wp-content/uploads/2021/04/bolsonaro-orcamento-2021-2304.jpg);
 	}
+		
+	.container-forum {
+		justify-content: space-around;
+	}
+
 }

@@ -249,7 +249,7 @@ li:hover::after {
 .card:nth-child(8) {
 	background-size: cover;
 	background-position: right;
-	background-image: linear-gradient(to left, transparent 30%, rgb(0, 0, 0) 60%), url(https://diariodocomercio.com.br/wp-content/uploads/2021/04/bolsonaro-orcamento-2021-2304.jpg);
+	background-image: linear-gradient(to left, transparent 30%, rgb(0, 0, 0) 60%), url(https://exame.com/wp-content/uploads/2020/07/brasil_coronavirus_bloomberg-1.jpg);
 }
 
 .card {
